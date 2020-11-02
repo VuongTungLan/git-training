@@ -78,7 +78,7 @@ form input:focus::placeholder {
 form input:focus {
     background-color: white;
     width: 300px;
-    color: #3bb6ba;
+    /* color: #3bb6ba; */
 }
  
 ::placeholder {
