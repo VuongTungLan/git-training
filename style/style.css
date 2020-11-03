@@ -101,3 +101,8 @@ form button {
     font-size: 18px;
     transition-duration: 0.25s;
 }
+
+form {
+    background-color: thistle;
+    text-align: center;
+}
