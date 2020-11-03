@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #3bb6ba;
@@ -7,3 +14,4 @@ body {
     background-position-x: right;
     background-color: thistle;
 }
+
