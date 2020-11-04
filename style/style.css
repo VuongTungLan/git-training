@@ -100,5 +100,7 @@ form button {
     cursor: pointer;
     font-size: 18px;
     transition-duration: 0.25s;
+    margin-bottom: 2px;
 }
+
 
