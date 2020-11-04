@@ -1,4 +1,4 @@
-var buttonRandom = document.querySelector("#login-button");
+var buttonRandom = document.querySelector(".login-button");
 const colors = ["#00aefd",
 "#ffa400",
 "#07a787",
@@ -10,10 +10,6 @@ const colors = ["#00aefd",
 "#2979ff",
 ];
 
-// buttonRandom.addEventListener("mouseenter", setInterval(function() {
-//     var rdColor = colors[Math.floor(Math.random()*colors.length)];
-//     buttonRandom.style.backgroundColor = rdColor;
-// }, 1000))
 
 Array.prototype.randomDiffElement = function (lastElement) {
     if(this.length == 0) {
@@ -31,7 +27,7 @@ Array.prototype.randomDiffElement = function (lastElement) {
 
 var rdColor = colors[(Math.floor(Math.random()*colors.length))];
 $(document).ready(function () {
-    $("#login-button").hover(function () {
+    $(".login-button").hover(function () {
             // over
             
             rdColor = colors.randomDiffElement(rdColor)
@@ -47,5 +43,17 @@ $(document).ready(function () {
         }
     );
 });
+
+/*-----------------------------------------------VALIDATE-----------------------------------------------*/
+function validateForm() {
+    var fname = document.forms["register"]["first_name"].value;
+    var lname = document.forms["register"]["last_name"].value;
+    var phone = document.forms["register"]["phone"].value;
+    var email = document.forms["register"]["email"].value;
+    var password = document.forms["register"]["password"].value;
+    var cfpassword = document.forms["register"]["cfpassword"].value;
+
+
+}
 
 

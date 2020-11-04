@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style_register.css">
+</head>
+<body>
+    <div class="page-wrapper bg-gra p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card">
+                <div class="card card-heading">
+                    <h2 class="title">REGISTER</h2>
+                </div>
+                <div class="card card-body">
+                    <form method="POST" name="register" onsubmit="return validateForm()">
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="first_name" placeholder="first name">
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="last_name" placeholder="last name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="value m-l-125 error">error</div> 
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Phone number</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="email">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Gender</div>
+                            <div class="value">
+                                <label class="radio-container col-2">Female
+                                    <input type="radio" checked="checked" name="female" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container col-2">Female
+                                    <input type="radio"  name="female">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Confirm password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="cfpassword">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-button" id="sign-in-button">REGISTER</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
